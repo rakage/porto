@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Satoshi";
+    src: url("/assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  }
+}
+
+@layer components {
+  .font-clashDisplay {
+    font-family: "ClashDisplay", sans-serif;
+  }
+
+  .font-satoshi {
+    font-family: "Satoshi", sans-serif;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+::selection {
+  background-color: var(--color-blue-700);
+  color: var(--color-white);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-700);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-600);
+}
