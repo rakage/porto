@@ -186,10 +186,6 @@ export default function ConnectPage() {
                   ),
                 )}
               </div>
-
-              <p className="border-t border-white/10 pt-4 font-satoshi text-xs font-semibold uppercase text-white/35 sm:hidden">
-                Scanned at networking event
-              </p>
             </div>
           </div>
         </section>
